@@ -35,9 +35,9 @@ function Task( {mId, isCompleted=false, tit=""}){
 
     return (
         <>
-            <div className="relative z-1 w-[300px] min-w-[300px] flex flex-col gap-[10px] bg-black text-white rounded-lg">
+            <div className="relative z-1 w-[300px] max-[639px]:min-w-full min-w-[300px] flex flex-col gap-[10px] bg-black text-white rounded-lg">
                 <div className="flex gap-[10px] m-[10px]">
-                    <input type="text" value={title} placeholder="Enter Task Here" onChange={handleChange} className={`bg-transparent h-auto resize-none ${isCompleted === true ? 'line-through' : 'no-underline'} placeholder:opacity-40`}/>
+                    <input type="text" value={title} placeholder="Enter Task Here" onChange={handleChange} className={`bg-transparent max-[639px]:w-[80vw] h-auto resize-none ${isCompleted === true ? 'line-through' : 'no-underline'} placeholder:opacity-40`}/>
                     <button
                     onClick={handleDelete}>
                         <img alt="delete" src={deleteIcon} className="h-[20px] opacity-50"/>
