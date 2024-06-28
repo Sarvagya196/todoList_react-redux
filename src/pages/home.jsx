@@ -15,7 +15,7 @@ function Home(){
     return (
         <>
         <div className="relative z-1 p-[10px] flex gap-[10px] bg-[#9e5173] h-[100vh] w-full">
-            <div className="flex gap-[10px] mr-[310px] max-[639px]:mr-0 max-[639px]:mb-[60px] sm:max-lg:mr-[210px] overflow-hidden hover:overflow-x-auto">
+            <div className="flex gap-[10px] mr-[310px] max-[639px]:mr-0 max-[639px]:mb-[60px] sm:max-lg:mr-[210px] overflow-hidden max-[639px]:overflow-auto hover:overflow-x-auto">
             {maintodos?.map((mtodo) => (
                 <Task key={mtodo?.id} mId={mtodo.id} isCompleted={mtodo.completed} tit={mtodo.title}/>
             ))}
